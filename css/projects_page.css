@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 main {
-    max-width: 1250px;
+    max-width: 1350px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5%;
@@ -35,14 +35,17 @@ h2 {
 
     & img {
         background-color: transparent;
-        margin-right: 8px;
+        margin-right: 15px;
         border-radius: 10px;
         height: 6rem;
         width: 6rem;
         -o-object-fit: contain;
         object-fit: contain;
+        filter: drop-shadow(5px 5px 6px black);
     }
 }
+
+.mde:hover { background: linear-gradient(180deg, rgba(225, 97, 33, 0.8), rgba(228, 57, 28, 0.6)); }
 
 .mod-list {
     margin-top: 20px;
@@ -50,7 +53,7 @@ h2 {
     margin-right: 2%;
     margin-left: 2%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
 }
 

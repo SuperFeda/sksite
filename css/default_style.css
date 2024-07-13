@@ -121,7 +121,7 @@ header {
         border-radius: 10px;
 
         &:hover {
-            color: rgba(54, 54, 225, 0.9);
+            color: #3636e1;
             background: rgba(0, 0, 0, 0.2);
         }
     }
