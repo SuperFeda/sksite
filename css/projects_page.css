@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+main {
+    max-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    margin-top: 70px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+}
+
+.mod {
+    display: flex;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(54, 54, 225, 0.9), rgba(54, 54, 225, 0.5));
+        transform: scale(1.01);
+    }
+
+    & img {
+        background-color: transparent;
+        margin-right: 8px;
+        border-radius: 10px;
+        height: 6rem;
+        width: 6rem;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+}
+
+.mod-list {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.mod-title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+}
+
+.mod-desc {
+    font-size: 18px;
+    color: #a6a6a6;
+}
