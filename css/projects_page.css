@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 main {
-    max-width: 1350px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5%;
@@ -39,17 +39,6 @@ h2 {
         background: linear-gradient(180deg, rgba(54, 54, 225, 0.9), rgba(54, 54, 225, 0.5));
         transform: scale(1.01);
         filter: drop-shadow(0 0 12px black);
-    }
-
-    & img {
-        background-color: transparent;
-        margin-right: 15px;
-        border-radius: 10px;
-        height: 6rem;
-        width: 6rem;
-        -o-object-fit: contain;
-        object-fit: contain;
-        filter: drop-shadow(5px 5px 6px black);
     }
 }
 

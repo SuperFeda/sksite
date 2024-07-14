@@ -10,7 +10,7 @@
 }
 
 ::selection {
-    background: #3636e1;
+    background: rgba(54, 54, 225, 0.8);
     color: white;
 }
 
@@ -21,7 +21,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #636363;
+    background-color: #555555;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -57,6 +57,17 @@ html, body {
 }
 
 img { border-radius: 15px }
+
+.mini-img {
+    background-color: transparent;
+    margin-right: 15px;
+    border-radius: 10px;
+    height: 6rem;
+    width: 6rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    filter: drop-shadow(5px 5px 6px black);
+}
 
 .url {
     color: #3636e1;
@@ -204,7 +215,7 @@ header {
 
         &:hover {
             color: #3636e1;
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.3);
         }
     }
 }
