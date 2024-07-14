@@ -29,8 +29,9 @@ h2 {
 }
 
 .service {
+    position: relative;
     list-style-type: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
@@ -40,9 +41,13 @@ h2 {
     & a { text-decoration: none; }
 
     &:hover {
-        background: linear-gradient(180deg, rgba(54, 54, 225, 0.9), rgba(54, 54, 225, 0.5));
+        border: 1px solid rgba(255, 255, 255, 0.3);
         transform: translateY(-5px);
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 1);
+
+        .service-icon {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
     }
 }
 
@@ -52,7 +57,8 @@ h2 {
 
 .service-icon {
     height: 256px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
 }
 
 .service-name {

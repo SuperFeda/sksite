@@ -16,6 +16,12 @@ h2 {
     color: white;
     border-bottom: 1px solid white;
     padding-bottom: 3px;
+
+    & a {
+        font-family: "Popins", sans-serif;
+        -webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1px #fff;
+    }
 }
 
 .mod {
@@ -32,6 +38,7 @@ h2 {
     &:hover {
         background: linear-gradient(180deg, rgba(54, 54, 225, 0.9), rgba(54, 54, 225, 0.5));
         transform: scale(1.01);
+        filter: drop-shadow(0 0 12px black);
     }
 
     & img {
