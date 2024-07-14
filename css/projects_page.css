@@ -14,11 +14,12 @@ h2 {
     font-family: "Unbounded", sans-serif;
     font-weight: 600;
     color: white;
-    padding-bottom: 3px;
     border-bottom: 1px solid white;
+    padding-bottom: 3px;
 }
 
 .mod {
+    position: relative;
     display: flex;
     padding: 15px;
     background-color: transparent;

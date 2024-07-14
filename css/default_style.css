@@ -95,6 +95,8 @@ header {
     padding: 10px 14%;
     transition: all 0.7s;
     z-index: 9999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px -1px black;
 }
 
 #nav-links {

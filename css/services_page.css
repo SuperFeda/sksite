@@ -1,0 +1,72 @@
+main {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+
+    & a {
+        font-family: "Popins", sans-serif;
+        -webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1px #fff;
+    }
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.service {
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    max-width: 256px;
+
+    & a { text-decoration: none; }
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(54, 54, 225, 0.9), rgba(54, 54, 225, 0.5));
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 1);
+    }
+}
+
+.service-content {
+    padding: 10px;
+}
+
+.service-icon {
+    height: 256px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.service-name {
+    font-size: 25px;
+    font-family: "Unbounded", sans-serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.service-price {
+    font-size: 22px;
+    font-family: "Unbounded", sans-serif;
+    color: rgba(54, 54, 225, 1);
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
