@@ -18,8 +18,6 @@ main {
 
 .service-img {
     filter: drop-shadow(0 0 10px black);
-    /*padding-right: 10px;*/
-    /*padding-left: 10px;*/
 }
 
 .service-name {
@@ -46,6 +44,32 @@ main {
     margin-top: 10px;
 }
 
+.work-example-title {
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    margin-top: 35px;
+    font-size: 35px;
+    font-family: "Unbounded", sans-serif;
+    color: white;
+}
+
+.work-example-img {
+    filter: drop-shadow(0 0 10px black);
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.work-example-imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.examples {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 
 @media (max-width: 767px) {
     .service-desc {
@@ -61,7 +85,11 @@ main {
     }
 
     .service-img {
-        height: min(390px, 100vw);
+        height: min(390px, 75vw);
+    }
+
+    .work-example-title {
+        font-size: 24px;
     }
 
     .button {

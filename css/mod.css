@@ -158,6 +158,10 @@ main {
     font-family: "Unbounded", sans-serif;
 }
 
+hr {
+    margin-top: 35px;
+}
+
 p {
     color: white;
     font-size: 17px;
