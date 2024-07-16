@@ -11,7 +11,7 @@ main {
 
 .circle { position: absolute; }
 .circle1 { box-shadow: 0 0 200px 100px #3636e1; top: 20%; }
-.circle2 { box-shadow: 0 0 200px 100px #1d1d9e; left: 67%; top: 93%; }
+.circle2 { box-shadow: 0 0 200px 100px #1d1d9e; left: 67%; top: 105%; }
 
 h2 {
     font-size: 30px;
