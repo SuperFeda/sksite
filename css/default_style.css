@@ -317,6 +317,13 @@ footer {
     }
 }
 
+.lang-icon {
+    position: relative;
+    font-size: 18px;
+    top: 3px;
+    right: 6px;
+}
+
 @media (max-width: 767px) {
     #burger-button { display: block; }
     #nav-bar { display: none; }

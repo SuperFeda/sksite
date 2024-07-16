@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -15,41 +15,51 @@
         <div id="box">
 
             <header class="site-header">
-                <a href="./index.html" class="header-logo"><img height="37" width="100" src="../img/png/sk_logo_miniature.png" alt="sk_logo" /></a>
+                <div class id="adap-site-header">
+                    <ul id="adap-nav-links">
+                        <a href="./index.html"><b class="active-tab">Главная</b></a>
+                        <a href="./projects.html"><b>Проекты</b></a>
+                        <a href="./services.html"><b>Услуги</b></a>
+                    </ul>
+                </div>
+                <a href="./index.html"><img style="height:2.5rem;width:6.5rem;" src="../img/png/sk_logo_miniature.png" alt="sk_logo" /></a>
                 <nav id="nav-bar">
                     <ul id="nav-links">
-                        <li><a href="./index.html"><b class="active-tab">Home</b></a></li>
-                        <li><a href="./projects.html"><b>Projects</b></a></li>
-                        <li><a href="./services.html"><b>Services</b></a></li>
+                        <li><a href="./index.html"><b class="active-tab">Главная</b></a></li>
+                        <li><a href="./projects.html"><b>Проекты</b></a></li>
+                        <li><a href="./services.html"><b>Услуги</b></a></li>
                     </ul>
                 </nav>
-                <div class="select-menu" onclick="changeLangListVisibylity()">
-                    <label>Lang</label>
-                    <div class="options-list">
-                        <a href="../ru/index.html" class="select-option">RU</a>
-                        <a href="../en/index.html" class="select-option selected-select-option">EN</a>
+                <div id="header-buttons">
+                    <button id="burger-button"><span class="material-symbols-outlined">menu</span></button>
+                    <div class="select-menu" onclick="changeLangListVisibylity()">
+                        <label><span class="material-symbols-outlined lang-icon">translate</span>Lang</label>
+                        <div class="options-list">
+                            <a href="../ru/index.html" class="select-option selected-select-option">RU</a>
+                            <a href="../en/index.html" class="select-option">EN</a>
+                        </div>
                     </div>
                 </div>
             </header>
 
             <main>
                 <div class="up-info">
-                    <h2 class="up-info-text">Комплекс студий разрабатывающий контент для <p>Minecraft</p></h2>
                     <img height="100" width="530" src="../img/png/SkylightProduction.png" alt="sk_logo" />
+                    <h2 class="up-info-text">Комплекс студий разрабатывающий контент для <p>Minecraft</p></h2>
                 </div>
 
                 <div class="studios">
                     <h2 class="chapter">Наши студии:</h2>
                     <div class="studios-list">
                         <a class="studio">
-                            <img src="../img/png/sm_logo_miniature.png" id="skylight_logo" class="studio-icon" alt="sk_logo">
+                            <img src="../img/png/sm_logo_miniature.png" class="mini-img" id="sm_logo" alt="sm_logo">
                             <div class="studio-content">
                                 <h3>SkylightModding</h3>
                                 <p>Дата создания: 17.10.2022</br>Всего проектов: 4</p>
                             </div>
                         </a>
                         <a class="studio mde">
-                            <img src="../img/png/mdelogo.png" id="mde_logo" class="studio-icon" alt="sk_logo">
+                            <img src="../img/png/mdelogo.png" class="mini-img" id="mde_logo" alt="mde_logo">
                             <div class="studio-content">
                                 <h3>MDE Studio</h3>
                                 <p>Дата создания: 22.07.2019</br>Всего проектов: 5</p>
@@ -60,13 +70,11 @@
             </main>
 
             <footer>
-                <ul class="footer-pillar">
-                    <a href="./index.html"><img height="50" width="280" src="../img/png/SkylightProduction.png" alt="sk_logo" /></a>
-                </ul>
+                <a href="../ru/index.html"><img height="50" width="280" id="footer-img" src="../img/png/SkylightProduction.png" alt="sk_logo" /></a>
                 <ul class="footer-pillar">
                     <h3>Ссылки</h3>
-                    <li class="footer-param"><a href="#">GitHub</a></li>
-                    <li class="footer-param"><a href="#">Modrinth</a></li>
+                    <li class="footer-param"><a href="https://github.com/SkylightProduction">GitHub</a></li>
+                    <li class="footer-param"><a href="https://modrinth.com/organization/SkylightProduction">Modrinth</a></li>
                     <li class="footer-param"><a href="#">YouTube</a></li>
                 </ul>
                 <ul class="footer-pillar">
@@ -74,7 +82,7 @@
                     <li class="first-column-param"><span id="mail">pochtaaaa22@mail.ru</span><span class="material-symbols-outlined">content_copy</span></li>
                 </ul>
                 <ul class="footer-pillar">
-                    <li><a class="button">Присоединиться к нам</a></li>
+                    <li><a class="button" href="./invite.html">Присоединиться к нам</a></li>
                     <li><a class="button">Какая-то кнопка</a></li>
                 </ul>
             </footer>

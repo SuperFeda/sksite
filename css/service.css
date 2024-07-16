@@ -71,6 +71,12 @@ main {
     margin-right: 2%;
 }
 
+.buy-icon {
+    position: relative;
+    top: 6px;
+    right: 4px;
+}
+
 
 @media (max-width: 767px) {
     .service-desc {
