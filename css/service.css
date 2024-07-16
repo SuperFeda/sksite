@@ -55,14 +55,15 @@ main {
 
 .work-example-img {
     filter: drop-shadow(0 0 10px black);
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin-top: 25px;
 }
 
 .work-example-imgs {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 25px;
+    gap: 10px;
 }
 
 .examples {

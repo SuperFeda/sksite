@@ -14,8 +14,9 @@ h2 {
     padding: 4px;
     border-bottom: 1px solid white;
     margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-right: 2%;
+    margin-left: 2%;
+    word-wrap: break-word;
 
     & a {
         font-family: "Popins", sans-serif;
@@ -86,6 +87,10 @@ h2 {
 
 
 @media (max-width: 767px) {
+    .service {
+        width: 200px;
+    }
+
     h2 {
         font-size: max(5vw, 27px);
     }
@@ -96,6 +101,20 @@ h2 {
 
     .service-price {
         font-size: 17px;
+    }
+}
+
+@media (max-width: 414px) {
+    .service {
+        width: 160px;
+    }
+
+    .service-name {
+        font-size: 15px;
+    }
+
+    .service-price {
+        font-size: 13px;
     }
 }
 
