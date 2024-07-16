@@ -79,3 +79,18 @@ h2 {
     text-decoration: underline;
 }
 
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: max(5vw, 27px);
+    }
+
+    .service-name {
+        font-size: 20px;
+    }
+
+    .service-price {
+        font-size: 17px;
+    }
+}
+

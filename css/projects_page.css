@@ -72,3 +72,21 @@ h2 {
     font-size: 18px;
     color: #a6a6a6;
 }
+
+@media (max-width: 575px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .mod-list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .mod-title {
+        font-size: 16px;
+    }
+
+    .mod-desc {
+        font-size: 12px;
+    }
+}

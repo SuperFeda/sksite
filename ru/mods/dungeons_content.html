@@ -15,7 +15,14 @@
         <div id="box">
 
             <header class="site-header">
-                <a href="../index.html" class="header-logo"><img height="37" width="100" src="../../img/png/sk_logo_miniature.png" alt="sk_logo" /></a>
+                <div class id="adap-site-header">
+                    <ul id="adap-nav-links">
+                        <a href="../index.html"><b>Главная</b></a>
+                        <a href="../projects.html"><b>Проекты</b></a>
+                        <a href="../services.html"><b>Услуги</b></a>
+                    </ul>
+                </div>
+                <a href="../index.html"><img style="height:2.5rem;width:6.5rem;" src="../../img/png/sk_logo_miniature.png" alt="sk_logo" /></a>
                 <nav id="nav-bar">
                     <ul id="nav-links">
                         <li><a href="../index.html"><b>Главная</b></a></li>
@@ -23,11 +30,14 @@
                         <li><a href="../services.html"><b>Услуги</b></a></li>
                     </ul>
                 </nav>
-                <div class="select-menu" onclick="changeLangListVisibylity()">
-                    <label>Lang</label>
-                    <div class="options-list">
-                        <a href="../../ru/mods/acofi.html" class="select-option selected-select-option">RU</a>
-                        <a href="../../en/mods/acofi.html" class="select-option">EN</a>
+                <div id="header-buttons">
+                    <button id="burger-button"><span class="material-symbols-outlined">menu</span></button>
+                    <div class="select-menu" onclick="changeLangListVisibylity()">
+                        <label>Lang</label>
+                        <div class="options-list">
+                            <a href="../../ru/index.html" class="select-option selected-select-option">RU</a>
+                            <a href="../../en/index.html" class="select-option">EN</a>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -36,7 +46,7 @@
                 <img class="mod-logo img-center" alt="mod_logo" width="612" height="100%" src="../../img/png/dc.png">
                 <div class="links">
                     <a href="https://modrinth.com/mod/acofi" class="modrinth-btn">Modrinth</a>
-                <a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-dungeons-content" class="curseforge-btn">CurseForge</a>
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-dungeons-content" class="curseforge-btn">CurseForge</a>
                 </div>
                 <h3 class="mod-desc-chap">О модификации</h3>
                 <p id="first-line">Minecraft Dungeons - спин-офф игры Minecraft, в жанре ролевого экшна. Если вы когда-то играли в эту игру, то наверняка у вас было желание перенести хотя бы часть контента в обычный Minecraft. Этот мод поможет реализовать данное желание.</p>

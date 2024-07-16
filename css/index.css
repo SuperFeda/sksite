@@ -20,7 +20,7 @@ main {
     margin-top: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
@@ -60,6 +60,16 @@ main {
     margin-left: 2%;
 }
 
+#mde_logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+#sm_logo {
+    height: 5rem;
+    width: 8rem;
+}
+
 .studio {
     display: flex;
     padding: 15px;
@@ -88,5 +98,53 @@ main {
 
     & p {
         color: white;
+    }
+}
+
+@media (max-width: 575px) {
+    .chapter {
+        font-size: 37px;
+    }
+
+    .up-info {
+        justify-content: normal;
+
+        & img {
+            height: auto;
+            width: 90vw;
+        }
+    }
+
+    .up-info-text {
+        font-size: 22px;
+        word-wrap: break-word;
+
+        & p {
+            font-size: 30px;
+        }
+    }
+
+    .studios-list {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* *********************** */
+    }
+
+    #mde_logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #sm_logo {
+        height: 3rem;
+        width: 5rem;
+    }
+
+    .studio-content {
+        & h3 {
+            font-size: 16px;
+        }
+
+        & p {
+            font-size: 13px;
+        }
     }
 }

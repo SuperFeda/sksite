@@ -15,7 +15,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
-    padding-top: 20px
+    padding-top: 20px;
+    padding-bottom: 10px;
     /*border: 1px solid rgba(255, 255, 255, 0.3);*/
     /*margin-top: 35px;*/
     /*margin-bottom: 35px;*/
@@ -41,11 +42,36 @@ main {
     text-decoration: none;
     border-radius: 0.75rem;
     font-size: 1rem;
+    font-weight: 500;
     transition: opacity 0.5s;
 
     &:hover {
         opacity: 0.8;
     }
+}
+
+.planet-mc-btn {
+    font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: .9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #36c;
+    transition: background 0.2s linear;
+
+    &:hover {
+        background: #4775d1;
+    }
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .img-center {
@@ -68,7 +94,7 @@ main {
 }
 
 .mod-img-cu {
-    width: 50%;
+    width: max(370px, 50%);
 }
 
 .mod-name {
@@ -120,4 +146,19 @@ ul {
 li {
     list-style: "- ";
     color: white;
+}
+
+
+@media (max-width: 767px) {
+    .mod-desc-chap {
+        font-size: 18px;
+    }
+
+    .mod-name {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 12px;
+    }
 }

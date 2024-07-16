@@ -1,10 +1,10 @@
 const list = document.querySelector('.options-list');
 
 function changeLangListVisibylity() {
-    if (list.style.display === 'block') {
+    if (list.style.display === 'grid') {
         list.style.display = 'none'
     } else {
-        list.style.display = 'block'
+        list.style.display = 'grid'
     }
 }
 
