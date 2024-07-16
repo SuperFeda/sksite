@@ -11,7 +11,11 @@ h2 {
     font-family: "Unbounded", sans-serif;
     font-weight: 600;
     color: white;
-    padding: 20px;
+    padding: 4px;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
 
     & a {
         font-family: "Popins", sans-serif;
@@ -25,11 +29,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    padding: 15px 20px;
+    padding-top: 35px;
 }
 
 .service {
     position: relative;
+    height: auto;
     list-style-type: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
@@ -58,7 +63,7 @@ h2 {
 }
 
 .service-icon {
-    height: 256px;
+    width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.5s;
     border-radius: 0;

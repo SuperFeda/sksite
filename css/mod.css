@@ -15,7 +15,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
-    padding-top: 20px;
+    padding-top: 6px;
     padding-bottom: 10px;
     /*border: 1px solid rgba(255, 255, 255, 0.3);*/
     /*margin-top: 35px;*/
@@ -67,6 +67,35 @@ main {
     }
 }
 
+.github-btn {
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    background: #21262d;
+    padding: 5px 1rem;
+    transition: all 80ms;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+
+    &:hover {
+        background: #292e36;
+    }
+}
+
+.mcreator-btn {
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 16px;
+    background: #ececec;
+    transition: all 0.2s;
+
+    &:hover {
+        background: #617d38;
+        color: white;
+    }
+}
+
 .images {
     display: flex;
     justify-content: center;
@@ -82,6 +111,7 @@ main {
 
 .mod-logo {
     filter: drop-shadow(0 0 10px black);
+    width: min(60%, 100vw);
 }
 
 .mod-img {
@@ -102,7 +132,6 @@ main {
     font-family: "Popins", sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }

@@ -92,16 +92,24 @@ details {
     border: 2px solid #3636e1;
     overflow: hidden;
     cursor: pointer;
+    padding: .4rem .4rem 0;
 
     & summary {
         background-color: #3636e1;
         color: white;
-        padding: 5px 10px;
-        transition: all 0.5s;
+        margin: -.4rem -.4rem 0;
+        padding: .4rem .7rem;
 
         &:hover {
             background-color: rgba(54, 54, 225, 0.8);
         }
+    }
+}
+details[open] {
+    padding: 0.4rem;
+
+    & summary {
+        margin-bottom: 8px;
     }
 }
 
