@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>SK | SF's GUI</title>
+<!--        <link rel="shortcut icon" type="image/x-icon" href="./images/png/site_icon.png" />-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="../../css/default_style.css">
+        <link rel="stylesheet" href="../../css/mod.css">
+    </head>
+    <body>
+
+        <div id="box">
+
+            <header class="site-header">
+                <div class id="adap-site-header">
+                    <ul id="adap-nav-links">
+                        <a href="../index.html"><b>Главная</b></a>
+                        <a href="../projects.html"><b>Проекты</b></a>
+                        <a href="../services.html"><b>Услуги</b></a>
+                    </ul>
+                </div>
+                <a href="../index.html"><img style="height:2.5rem;width:6.5rem;" src="../../img/png/sk_logo_miniature.png" alt="sk_logo" /></a>
+                <nav id="nav-bar">
+                    <ul id="nav-links">
+                        <li><a href="../index.html"><b>Главная</b></a></li>
+                        <li><a href="../projects.html"><b>Проекты</b></a></li>
+                        <li><a href="../services.html"><b>Услуги</b></a></li>
+                    </ul>
+                </nav>
+                <div id="header-buttons">
+                    <button id="burger-button"><span class="material-symbols-outlined">menu</span></button>
+                    <div class="select-menu" onclick="changeLangListVisibylity()">
+                        <label><span class="material-symbols-outlined lang-icon">translate</span>Lang</label>
+                        <div class="options-list">
+                            <a href="../../ru/projects/sfs_gui.html" class="select-option selected-select-option">RU</a>
+                            <a href="../../en/projects/sfs_gui.html" class="select-option">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <h2 class="mod-name">CITATTFP</h2>
+                <div class="links">
+                    <a href="https://modrinth.com/datapack/custom-item-to-activate-the-tf-portal" class="modrinth-btn">Modrinth</a>
+                    <a href="https://www.curseforge.com/minecraft/texture-packs/custom-item-to-activate-the-twilight-forest-portal" class="curseforge-btn">CurseForge</a>
+                    <a href="https://www.planetminecraft.com/data-pack/custom-item-to-activate-the-twilight-forest-portal-5822764/" class="planet-mc-btn">Planet minecraft</a>
+                    <a href="https://github.com/SkylightProduction/CITATTFP" class="github-btn">GitHub</a>
+                </div>
+                <h3 class="mod-desc-chap">О дата паке</h3>
+                <p id="first-line">CITATTFP - это дата пак, с помощью которого можно заменить стандартный предмет, активирующий портал в Сумеречный лес, на любой другой.</p>
+                <h3 class="mod-desc-chap">Гайд по использованию дата пака</h3>
+                <ul>
+                    <li>Откройте архив и пройдите по пути: <a class="code">"data/twilightforest/tags/items/portal"</a>.</li>
+                    <li>Откройте файл <a class="code">"activator.json"</a>.</li>
+                    <li>Найдите строку <a class="code">"id":"minecraft:netherite_block"</a>. <a class="code">"minecraft:netherite_block"</a> - является тем самым предметом, который будет заменять собой алмаз.</li>
+                    <ul>
+                        <li>
+                            Для того чтобы получить ID предмета, нужно нажать комбинацию клавиш F3 + H в окне Minecraft, после перейти в меню инвентаря и навестись курсором на предмет, который вы хотите использовать заместо алмаза, для активации портала в СЛ.
+                            <img src="https://cdn.modrinth.com/data/cached_images/a50e51bbafe0fabe74782e7bed83435d74ea73ff.png" class="mod-img" />
+                            То, что выделено на фото красной рамкой и является ID предмета, который нужно использовать в <a class="code">activator.json</a>. Записывать ID в файле нужно вместе с кавычками, как показано в примере.
+                        </li>
+                    </ul>
+                    <li>После смены идентификатора сохраните файл и закройте архив.</li>
+                    <li>Переместите архив в папку datapacks находящиеся в <a class="code">C:\Users\(UserName)\AppData\Roaming\.minecraft\saves\(WorldName)\datapacks</a> для нужного вам мира.</li>
+                </ul>
+            </main>
+
+            <footer>
+                <a href="../../ru/index.html"><img height="50" width="280" src="../../img/png/SkylightProduction.png" alt="sk_logo" /></a>
+                <ul class="footer-pillar">
+                    <h3>Ссылки</h3>
+                    <li class="footer-param"><a href="https://github.com/SkylightProduction">GitHub</a></li>
+                    <li class="footer-param"><a href="https://modrinth.com/organization/SkylightProduction">Modrinth</a></li>
+                    <li class="footer-param"><a href="#">YouTube</a></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <h3>Контакты</h3>
+                    <li class="first-column-param"><span id="mail">pochtaaaa22@mail.ru</span><span class="material-symbols-outlined">content_copy</span></li>
+                </ul>
+                <ul class="footer-pillar">
+                    <li><a class="button" href="../invite.html">Присоединиться к нам</a></li>
+                    <li><a class="button">Какая-то кнопка</a></li>
+                </ul>
+            </footer>
+
+            <script src="../../js/header.js"></script>
+
+        </div>
+
+    </body>
+</html>
