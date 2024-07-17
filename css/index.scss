@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+@import "mixins";
+
+main {
+    @include elementCenterMargin;
+    max-width: 1250px;
+    margin-bottom: 5%;
+}
+
+.chapter {
+    @include textFill;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.up-info {
+    @include elementCenterFlexWrap;
+    margin-top: 10%;
+    gap: 20px;
+    padding: 10px;
+
+    img {
+        margin-top: 20px;
+        filter: drop-shadow(0 0 100px #3636e1);
+    }
+}
+
+.up-info-text {
+    font-family: "Unbounded", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    max-width: 500px;
+    z-index: 500;
+
+    p {
+        @include textFill;
+        font-size: 40px;
+    }
+}
+
+.studios {
+    margin-top: 5rem;
+}
+
+.studios-list {
+    @include indent;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr)); /* *********************** */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#mde_logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+#sm_logo {
+    height: 5rem;
+    width: 8rem;
+}
+
+.studio {
+    display: flex;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(var(--skylight-blue-rgb), 0.9), rgba(var(--skylight-blue-rgb), 0.5));
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 1);
+    }
+}
+
+.mde:hover {
+    background: linear-gradient(180deg, rgba(225, 97, 33, 0.8), rgba(228, 57, 28, 0.6));
+}
+
+.studio-content {
+    h3 {
+        color: white;
+        font-family: "Unbounded", sans-serif;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+@media (max-width: 575px) {
+    .chapter {
+        font-size: 37px;
+    }
+
+    .up-info {
+        justify-content: normal;
+
+        img {
+            height: auto;
+            width: 90vw;
+        }
+    }
+
+    .up-info-text {
+        font-size: 22px;
+        word-wrap: break-word;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .studios-list {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* *********************** */
+    }
+
+    #mde_logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #sm_logo {
+        height: 3rem;
+        width: 5rem;
+    }
+
+    .studio-content {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+}

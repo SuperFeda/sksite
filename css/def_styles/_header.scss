@@ -1,0 +1,120 @@
+header {
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(24, 24, 27, 0.5);
+    padding: 10px 14%;
+    transition: all 0.7s;
+    z-index: 9999;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 0 30px -1px black;
+}
+
+.active-tab {
+    color: var(--skylight-blue);
+    border-bottom: 2px solid var(--skylight-blue);
+    padding-bottom: 1px;
+}
+
+.lang-icon {
+    position: relative;
+    font-size: 18px;
+    top: 3px;
+    right: 6px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 5px;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        transition: all 0.5s;
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        &:hover {
+            color: var(--skylight-blue);
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+#header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#adap-site-header {
+    display: none;
+}
+
+#burger-button {
+    display: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+
+    span {
+        color: white;
+        padding: 3px 8px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #burger-button { display: block; }
+    #nav-bar { display: none; }
+    header { padding: 10px 2%; }
+
+    #adap-site-header {
+        position: absolute;
+        top: 80px;
+        background-color: rgba(24, 24, 27, 0.7);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        filter: var(--default-shadow);
+        width: 96%;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        z-index: 200;
+
+        &.active-header {
+            display: block;
+        }
+    }
+
+    #adap-nav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+
+        a {
+            padding-left: 15px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+                color: var(--skylight-blue-dark);
+                border-radius: 10px;
+            }
+        }
+    }
+}

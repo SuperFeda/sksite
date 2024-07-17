@@ -1,0 +1,23 @@
+::selection {
+    background: rgba(54, 54, 225, 0.8);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 7px; /* ширина для вертикального скролла */
+    height: 7px; /* высота для горизонтального скролла */
+    background-color: rgba(0, 0, 0, 0.97);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #636363;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement { background-color: transparent; }
+::-webkit-scrollbar-button:vertical:end:increment { background-color: transparent; }
+::-webkit-scrollbar-button:horizontal:start:decrement { background-color: transparent; }
+::-webkit-scrollbar-button:horizontal:end:increment { background-color: transparent; }

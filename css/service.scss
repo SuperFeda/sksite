@@ -1,0 +1,103 @@
+@import "mixins";
+
+main {
+    @include elementCenterMargin;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.service-info {
+    @include elementCenterFlexWrap;
+    @include indent();
+    gap: 25px;
+}
+
+.service-img {
+    filter: var(--default-shadow);
+}
+
+.service-name {
+    font-size: 32px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.service-desc {
+    margin-top: 12px;
+    color: #757575;
+    font-size: 17px;
+    max-width: 600px;
+}
+
+.service-price {
+    font-size: 22px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--skylight-blue);
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.work-example-title {
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    margin-top: 35px;
+    font-size: 35px;
+    font-family: "Unbounded", sans-serif;
+    color: white;
+}
+
+.work-example-img {
+    filter: var(--default-shadow);
+    width: 100%;
+    height: auto;
+}
+
+.work-example-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.examples {
+    @include indent;
+}
+
+.buy-icon {
+    position: relative;
+    top: 6px;
+    right: 4px;
+}
+
+
+@media (max-width: 767px) {
+    .service-desc {
+        font-size: 13px;
+    }
+
+    .service-name {
+        font-size: 25px;
+    }
+
+    .service-price {
+        font-size: 18px;
+    }
+
+    .service-img {
+        height: min(390px, 75vw);
+    }
+
+    .work-example-title {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 8px 13px;
+        font-weight: 200;
+    }
+}
