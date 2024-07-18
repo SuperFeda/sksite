@@ -43,6 +43,10 @@ h2 {
         filter: var(--default-shadow);
         border: 1px solid transparent;
     }
+
+    &:active {
+        transform: scale(0.85);
+    }
 }
 .mde:hover { background: linear-gradient(180deg, rgba(var(--mde-orange-rgb), 0.8), rgba(var(--mde-dark-orange-rgb), 0.6)); }
 

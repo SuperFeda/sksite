@@ -2,8 +2,8 @@
 
 main {
     @include elementCenterMargin;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     max-width: 1100px;
     width: 100%;
 }
@@ -62,22 +62,26 @@ main {
 
 .work-example-img {
     filter: var(--default-shadow);
-    width: 100%;
+    width: 49%;
     height: auto;
+    flex-grow: 1;
 }
 
 .work-example-imgs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 25px;
     gap: 10px;
+    max-width: 1050px;
 }
 
 .examples {
     @include indent;
+    margin-top: 50px;
 }
 
 .buy-icon {
+    color: currentColor;
     position: relative;
     top: 6px;
     right: 4px;

@@ -2,8 +2,8 @@
 main {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 1100px;
   width: 100%;
 }
@@ -44,10 +44,10 @@ main {
   margin-bottom: 50px;
   margin-top: 10px;
 }
-.service-price:after {
+.service-price::after {
   content: " ₽";
 }
-.service-price.not-static:before {
+.service-price.not-static::before {
   content: "от ";
 }
 
@@ -63,10 +63,10 @@ main {
   text-decoration: underline;
   color: var(--skylight-blue);
 }
-.new-price:after {
+.new-price::after {
   content: " ₽";
 }
-.new-price.not-static:before {
+.new-price.not-static::before {
   content: "от ";
 }
 
@@ -77,10 +77,10 @@ main {
   text-decoration: line-through;
   color: #c62323;
 }
-.old-price:after {
+.old-price::after {
   content: " ₽";
 }
-.old-price.not-static:before {
+.old-price.not-static::before {
   content: "от ";
 }
 
@@ -95,23 +95,27 @@ main {
 
 .work-example-img {
   filter: var(--default-shadow);
-  width: 100%;
+  width: 49%;
   height: auto;
+  flex-grow: 1;
 }
 
 .work-example-imgs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 25px;
   gap: 10px;
+  max-width: 1050px;
 }
 
 .examples {
   margin-right: 2%;
   margin-left: 2%;
+  margin-top: 50px;
 }
 
 .buy-icon {
+  color: currentColor;
   position: relative;
   top: 6px;
   right: 4px;

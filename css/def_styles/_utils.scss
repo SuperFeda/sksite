@@ -25,6 +25,7 @@ img { border-radius: 15px }
     width: 6rem;
     -o-object-fit: contain;
     object-fit: contain;
+    transition: all 0.5s;
     filter: drop-shadow(5px 5px 6px black);
 }
 
@@ -126,9 +127,8 @@ details[open] {
     transition: all 0.5s;
     cursor: pointer;
 
-    &:hover {
-        opacity: 0.7;
-    }
+    &:hover { opacity: 0.7; }
+    &:active { transform: scale(0.9); }
 }
 
 .card-title {

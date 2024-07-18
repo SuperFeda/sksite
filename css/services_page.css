@@ -84,10 +84,10 @@ h2 a {
   color: var(--skylight-blue);
   margin-bottom: 10px;
 }
-.service-price:after {
+.service-price::after {
   content: " ₽";
 }
-.service-price.not-static:before {
+.service-price.not-static::before {
   content: "от ";
 }
 
@@ -103,10 +103,10 @@ h2 a {
   text-decoration: underline;
   color: var(--skylight-blue);
 }
-.new-price:after {
+.new-price::after {
   content: " ₽";
 }
-.new-price.not-static:before {
+.new-price.not-static::before {
   content: "от ";
 }
 
@@ -117,10 +117,10 @@ h2 a {
   text-decoration: line-through;
   color: #c62323;
 }
-.old-price:after {
+.old-price::after {
   content: " ₽";
 }
-.old-price.not-static:before {
+.old-price.not-static::before {
   content: "от ";
 }
 

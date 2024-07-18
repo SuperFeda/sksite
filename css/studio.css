@@ -32,8 +32,12 @@ main {
   flex-grow: 1;
 }
 .member:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 20px black;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 20px black inset;
+  opacity: 0.75;
+}
+.member:hover .mini-img {
+  filter: drop-shadow(0 0 0 transparent);
 }
 
 .links {

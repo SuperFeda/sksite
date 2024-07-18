@@ -31,11 +31,11 @@
     text-decoration: $text-decor;
     color: $text-color;
 
-    &:after {
+    &::after {
         content: " ₽";
     }
 
-    &.not-static:before {
+    &.not-static::before {
         content: "от ";
     }
 }

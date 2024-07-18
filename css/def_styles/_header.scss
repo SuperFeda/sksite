@@ -21,6 +21,7 @@ header {
 }
 
 .lang-icon {
+    color: currentColor;
     position: relative;
     font-size: 18px;
     top: 3px;
@@ -43,6 +44,14 @@ header {
         transition: all 0.5s;
         padding: 10px 20px;
         border-radius: 10px;
+
+        b .material-symbols-outlined {
+            position: relative;
+            color: currentColor;
+            font-size: 22px;
+            top: 4px;
+            right: 4px;
+        }
 
         &:hover {
             color: var(--skylight-blue);
@@ -109,6 +118,14 @@ header {
             font-size: 22px;
             color: white;
             text-decoration: none;
+
+            b .material-symbols-outlined {
+                position: relative;
+                color: currentColor;
+                font-size: 24px;
+                top: 4px;
+                right: 4px;
+            }
 
             &:hover {
                 background-color: rgba(0, 0, 0, 0.3);
