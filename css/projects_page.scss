@@ -11,7 +11,7 @@ main {
 
 .circle { position: absolute; }
 .circle1 { box-shadow: 0 0 200px 100px var(--skylight-blue); top: 20%; }
-.circle2 { box-shadow: 0 0 230px 150px var(--skylight-blue-dark); left: 67%; top: 105%; }
+.circle2 { box-shadow: 0 0 230px 150px var(--skylight-blue-dark); left: 67%; top: 113%; }
 
 h2 {
     @include indent;
@@ -45,10 +45,18 @@ h2 {
     }
 
     &:active {
-        transform: scale(0.85);
+        animation: 1s scale-anim ease;
     }
 }
 .mde:hover { background: linear-gradient(180deg, rgba(var(--mde-orange-rgb), 0.8), rgba(var(--mde-dark-orange-rgb), 0.6)); }
+
+@keyframes scale-anim {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.02);
+    }
+}
 
 .mod-list {
     @include indent;

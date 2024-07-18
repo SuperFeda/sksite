@@ -226,7 +226,7 @@ html, body {
   font-family: "Nunito";
   height: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 40px;
   line-height: 1.2;
 }
 
@@ -553,6 +553,12 @@ details[open] summary {
   display: block;
 }
 
+.copy-chapter:hover {
+  cursor: copy;
+}
+.copy-chapter:hover .copy-url-icon {
+  display: inline !important;
+}
 @media (max-width: 767px) {
   .mini-img {
     height: 4rem;
@@ -566,6 +572,12 @@ details[open] summary {
   }
   .card-desc {
     font-size: 12px;
+  }
+  .button {
+    font-size: 13px;
+  }
+  .button .material-symbols-outlined {
+    font-size: 20px;
   }
 }
 

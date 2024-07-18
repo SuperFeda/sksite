@@ -95,7 +95,7 @@ main {
 
 .mod-logo {
     filter: var(--default-shadow);
-    width: min(40%, 100vw);
+    width: min(500px, 100vw);
 }
 
 .flex-element {
@@ -190,6 +190,6 @@ li {
     .github-btn,
     .modrinth-btn,
     .planet-mc-btn {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
