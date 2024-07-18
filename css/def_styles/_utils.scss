@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import "../mixins";
 
 .no-display {
     position: absolute !important;
@@ -52,7 +53,7 @@ details {
     cursor: pointer;
     padding: .4rem .4rem 0;
 
-    & summary {
+    summary {
         background-color: var(--skylight-blue);
         color: white;
         margin: -.4rem -.4rem 0;
@@ -66,7 +67,7 @@ details {
 details[open] {
     padding: 0.4rem;
 
-    & summary {
+    summary {
         margin-bottom: 8px;
     }
 }
@@ -83,7 +84,7 @@ details[open] {
         background-color: rgba(var(--skylight-blue-rgb), 0.8);
     }
 
-    & label {
+    label {
         font-size: 18px;
     }
 }
@@ -114,7 +115,6 @@ details[open] {
     background-color: rgba(var(--skylight-blue-rgb), 0.7)
 }
 
-
 .button {
     font-family: "Unbounded", sans-serif;
     font-weight: 300;
@@ -127,10 +127,26 @@ details[open] {
     cursor: pointer;
 
     &:hover {
-        background: rgba(var(--skylight-blue-rgb), 0.7);
+        opacity: 0.7;
     }
 }
 
+.card-title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+}
+
+.card-desc {
+    font-size: 18px;
+    color: #a6a6a6;
+}
+
+.img-center {
+    @include elementCenterMargin;
+    display: block;
+}
 
 @media (max-width: 767px) {
     .mini-img {
@@ -140,5 +156,13 @@ details[open] {
 
     details summary {
         font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-desc {
+        font-size: 12px;
     }
 }

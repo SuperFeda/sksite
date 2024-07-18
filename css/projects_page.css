@@ -18,7 +18,7 @@ main {
 }
 
 .circle2 {
-  box-shadow: 0 0 200px 100px var(--skylight-blue-dark);
+  box-shadow: 0 0 230px 150px var(--skylight-blue-dark);
   left: 67%;
   top: 105%;
 }
@@ -72,30 +72,12 @@ h2 a {
   gap: 10px;
 }
 
-.mod-title {
-  font-family: "Unbounded", sans-serif;
-  font-weight: 600;
-  font-size: 23px;
-  color: white;
-}
-
-.mod-desc {
-  font-size: 18px;
-  color: #a6a6a6;
-}
-
 @media (max-width: 575px) {
   h2 {
     font-size: 20px;
   }
   .mod-list {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-  .mod-title {
-    font-size: 16px;
-  }
-  .mod-desc {
-    font-size: 12px;
   }
 }
 

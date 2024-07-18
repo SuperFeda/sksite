@@ -92,15 +92,13 @@ main {
   gap: 10px;
 }
 
-.img-center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 .mod-logo {
   filter: var(--default-shadow);
-  width: min(60%, 100vw);
+  width: min(40%, 100vw);
+}
+
+.flex-element {
+  flex-grow: 1;
 }
 
 .mod-img {

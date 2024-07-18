@@ -72,13 +72,22 @@ h2 {
 }
 
 .service-price {
-    font-size: 22px;
-    font-family: "Unbounded", sans-serif;
-    color: var(--skylight-blue);
+    @include price;
     margin-bottom: 10px;
-    text-decoration: underline;
 }
 
+.prices {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-price {
+    @include price;
+}
+
+.old-price {
+    @include price(#c62323, 18px, line-through);
+}
 
 @media (max-width: 767px) {
     .service {

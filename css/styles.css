@@ -11,7 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(24, 24, 27, 0.5);
+  background: rgba(24, 24, 27, 0.65);
   padding: 10px 14%;
   transition: all 0.7s;
   z-index: 9999;
@@ -199,14 +199,16 @@ footer {
   --card-bg: rgba(255, 255, 255, 0.02);
 }
 
-* {
-  font-family: "Nunito";
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 html, body {
+  font-family: "Nunito";
   height: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
@@ -380,7 +382,25 @@ details[open] summary {
   cursor: pointer;
 }
 .button:hover {
-  background: rgba(var(--skylight-blue-rgb), 0.7);
+  opacity: 0.7;
+}
+
+.card-title {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  color: white;
+}
+
+.card-desc {
+  font-size: 18px;
+  color: #a6a6a6;
+}
+
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -390,6 +410,12 @@ details[open] summary {
   }
   details summary {
     font-size: 14px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-desc {
+    font-size: 12px;
   }
 }
 

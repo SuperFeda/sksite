@@ -33,13 +33,22 @@ main {
 }
 
 .service-price {
-    font-size: 22px;
-    font-family: "Unbounded", sans-serif;
-    font-weight: 600;
-    text-decoration: underline;
-    color: var(--skylight-blue);
+    @include price;
     margin-bottom: 50px;
     margin-top: 10px;
+}
+
+.prices {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-price {
+    @include price;
+}
+
+.old-price {
+    @include price(#c62323, 18px, line-through);
 }
 
 .work-example-title {

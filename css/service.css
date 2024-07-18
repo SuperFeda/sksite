@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   margin-left: auto;
   margin-right: auto;
@@ -37,11 +38,50 @@ main {
 .service-price {
   font-size: 22px;
   font-family: "Unbounded", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: underline;
   color: var(--skylight-blue);
   margin-bottom: 50px;
   margin-top: 10px;
+}
+.service-price:after {
+  content: " ₽";
+}
+.service-price.not-static:before {
+  content: "от ";
+}
+
+.prices {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-price {
+  font-size: 22px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--skylight-blue);
+}
+.new-price:after {
+  content: " ₽";
+}
+.new-price.not-static:before {
+  content: "от ";
+}
+
+.old-price {
+  font-size: 18px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #c62323;
+}
+.old-price:after {
+  content: " ₽";
+}
+.old-price.not-static:before {
+  content: "от ";
 }
 
 .work-example-title {
