@@ -31,8 +31,10 @@ img { border-radius: 15px }
 
 .url {
     color: var(--skylight-blue);
+    font-family: "Unbounded", sans-serif;
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 
     &:hover {
         color: rgba(54, 54, 225, 0.8);
@@ -173,11 +175,11 @@ details[open] {
     }
 
     .card-title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .card-desc {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .button {
@@ -186,5 +188,9 @@ details[open] {
         .material-symbols-outlined {
             font-size: 20px;
         }
+    }
+
+    .copy-url-icon {
+        display: inline !important;
     }
 }

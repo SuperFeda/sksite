@@ -50,6 +50,8 @@ h2 a {
   border-radius: 10px;
   transition: all 0.3s;
   text-decoration: none;
+  width: 49%;
+  flex-grow: 1;
 }
 .mod:hover {
   background: linear-gradient(180deg, rgba(var(--skylight-blue-rgb), 0.9), rgba(var(--skylight-blue-rgb), 0.5));
@@ -78,8 +80,8 @@ h2 a {
   margin-left: 2%;
   margin-top: 20px;
   margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

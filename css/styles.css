@@ -136,7 +136,7 @@ header {
 }
 footer {
   padding: 30px 14% 30px;
-  background: linear-gradient(135deg, rgba(24, 24, 27, 0.5) 75%, rgba(54, 54, 225, 0.4));
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0.5) 45%, rgba(54, 54, 225, 0.4));
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px -2px black;
   display: grid;
@@ -438,8 +438,10 @@ img {
 
 .url {
   color: var(--skylight-blue);
+  font-family: "Unbounded", sans-serif;
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 .url:hover {
   color: rgba(54, 54, 225, 0.8);
@@ -568,16 +570,19 @@ details[open] summary {
     font-size: 14px;
   }
   .card-title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .card-desc {
-    font-size: 12px;
+    font-size: 15px;
   }
   .button {
     font-size: 13px;
   }
   .button .material-symbols-outlined {
     font-size: 20px;
+  }
+  .copy-url-icon {
+    display: inline !important;
   }
 }
 
