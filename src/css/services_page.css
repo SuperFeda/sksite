@@ -1,0 +1,159 @@
+#services-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
+  margin-bottom: 50px;
+}
+
+.message {
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 20px;
+  color: white;
+}
+
+.services-chap {
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 40px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 4px;
+  border-bottom: 1px solid white;
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+.services-chap a {
+  font-family: "Popins", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.service {
+  position: relative;
+  height: auto;
+  list-style-type: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  max-width: 256px;
+  background: var(--card-bg);
+}
+.service a {
+  text-decoration: none;
+}
+.service:hover {
+  border: 1px solid var(--border-color);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -5px rgb(0, 0, 0);
+  /*box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5) inset, -10px -10px 10px rgba(0, 0, 0, 0.35) inset;*/
+}
+.service:hover .service-icon {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-content {
+  padding: 10px;
+}
+
+.service-icon {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s;
+  border-radius: 0;
+}
+
+.service-name {
+  font-size: 25px;
+  font-family: "Unbounded", sans-serif;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.service-price {
+  font-size: 22px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--skylight-blue);
+  margin-bottom: 10px;
+}
+.service-price.not-static::before {
+  font-family: "Nunito";
+  font-weight: 1000;
+  content: "~ ";
+}
+
+.prices {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-price {
+  font-size: 22px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--skylight-blue);
+}
+.new-price.not-static::before {
+  font-family: "Nunito";
+  font-weight: 1000;
+  content: "~ ";
+}
+
+.old-price {
+  font-size: 18px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #c62323;
+}
+.old-price.not-static::before {
+  font-family: "Nunito";
+  font-weight: 1000;
+  content: "~ ";
+}
+
+@media (max-width: 767px) {
+  .service {
+    width: 200px;
+  }
+  h2 {
+    font-size: max(5vw, 27px);
+  }
+  .service-name {
+    font-size: 20px;
+  }
+  .service-price {
+    font-size: 17px;
+  }
+}
+@media (max-width: 414px) {
+  .service {
+    width: 160px;
+  }
+  .service-name {
+    font-size: 15px;
+  }
+  .service-price {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=services_page.css.map */

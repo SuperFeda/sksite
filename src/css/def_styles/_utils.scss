@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import "../mixins";
+
+.no-display {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+img { border-radius: 15px }
+
+.mini-img {
+    background-color: transparent;
+    margin-right: 15px;
+    border-radius: 10px;
+    height: 6rem;
+    width: 6rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: all 0.5s;
+    filter: drop-shadow(5px 5px 6px black);
+}
+
+.url {
+    color: var(--skylight-blue);
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:hover {
+        color: rgba(54, 54, 225, 0.8);
+    }
+}
+
+.code {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 7px;
+    padding: 0 7px;
+}
+
+details {
+    border-radius: 10px;
+    border: 2px solid var(--skylight-blue);
+    overflow: hidden;
+    cursor: pointer;
+    padding: .4rem .4rem 0;
+
+    summary {
+        background-color: var(--skylight-blue);
+        color: white;
+        margin: -.4rem -.4rem 0;
+        padding: .4rem .7rem;
+
+        &:hover {
+            background-color: rgba(var(--skylight-blue-rgb), 0.8);
+        }
+    }
+}
+details[open] {
+    padding: 0.4rem;
+
+    summary {
+        margin-bottom: 8px;
+    }
+}
+
+.select-menu {
+    padding: 6px 16px;
+    border-radius: 10px;
+    background-color: var(--skylight-blue);
+    color: white;
+    outline: none;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: rgba(var(--skylight-blue-rgb), 0.8);
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+.options-list {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 13px;
+    position: absolute;
+    display: none;
+    gap: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.select-option {
+    color: white;
+    padding: 5px 8px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--skylight-blue)
+    }
+}
+
+.selected-select-option {
+    background-color: rgba(var(--skylight-blue-rgb), 0.7)
+}
+
+.button {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background: var(--skylight-blue);
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover { opacity: 0.7; }
+    &:active { transform: scale(0.9); }
+}
+
+.button-tr {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background: transparent;
+    border: 2px solid var(--skylight-blue);
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover { opacity: 0.7; }
+    &:active { transform: scale(0.9); }
+}
+
+.card-title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+}
+
+.card-desc {
+    font-size: 18px;
+    color: #a6a6a6;
+}
+
+.img-center {
+    @include elementCenterMargin;
+    display: block;
+}
+
+.copy-chapter {
+    &:hover {
+        cursor: copy;
+
+        .copy-url-icon {
+            display: inline !important;
+        }
+    }
+
+    &::before {
+
+    }
+}
+
+@media (max-width: 767px) {
+    .mini-img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    details summary {
+        font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-desc {
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 13px;
+
+        .material-symbols-outlined {
+            font-size: 20px;
+        }
+    }
+
+    .copy-url-icon {
+        display: inline !important;
+    }
+
+    .url {
+        font-size: 13px;
+    }
+}

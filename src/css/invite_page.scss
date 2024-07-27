@@ -1,0 +1,35 @@
+@import "mixins";
+
+#invite-page-main {
+    @include elementCenterMargin;
+    max-width: 720px;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 70px;
+}
+
+.form {
+    @include indent;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--skylight-blue), var(--skylight-blue-dark));
+
+    & h2 {
+        @include elementCenterFlex;
+        font-family: "Unbounded", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    & p {
+        color: white;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    & iframe {
+        height: 550px;
+        width: 100%;
+    }
+}

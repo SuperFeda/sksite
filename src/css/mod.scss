@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "mixins";
+
+#mod-main {
+    @include elementCenterMargin;
+    max-width: 1100px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.links {
+    @include elementCenterFlexWrap;
+    gap: 12px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+.curseforge-btn {
+    background: #f16436;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.modrinth-btn {
+    background: #1bd96a;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    font-weight: 500;
+    transition: opacity 0.5s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.planet-mc-btn {
+    font-family: Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #36c;
+    transition: background 0.2s linear;
+
+    &:hover {
+        background: #4775d1;
+    }
+}
+
+.github-btn {
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    background: #21262d;
+    padding: 8px 16px;
+    transition: all 80ms;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+
+    &:hover {
+        background: #292e36;
+    }
+}
+
+.mcreator-btn {
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 16px;
+    background: #ececec;
+    transition: all 0.2s;
+
+    &:hover {
+        background: #617d38;
+        color: white;
+    }
+}
+
+.images {
+    @include elementCenterFlexWrap;
+    gap: 10px;
+}
+
+.mod-logo {
+    filter: var(--default-shadow);
+    width: min(500px, 100vw);
+}
+
+.flex-element {
+    flex-grow: 1;
+}
+
+.mod-img {
+    filter: var(--default-shadow);
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mod-img-cu {
+    width: max(370px, 50%);
+}
+
+.mod-name {
+    @include textFill;
+    @include elementCenterFlex;
+    font-size: 40px;
+}
+
+.mod-desc-chap {
+    font-size: 25px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 3px;
+    padding-top: 35px;
+}
+
+.warn-img {
+    border-bottom: 1px solid white;
+    margin-top: 55px;
+    padding-bottom: 5px;
+    border-radius: 0;
+}
+
+#first-line::first-letter {
+    initial-letter: 2;
+    margin-right: 5px;
+    font-family: "Unbounded", sans-serif;
+}
+
+hr {
+    margin-top: 35px;
+}
+
+.mod-desc-p {
+    color: white;
+    font-size: 17px;
+    padding-top: 5px;
+    margin-bottom: 12px;
+}
+
+.mod-details {
+    margin-top: 10px;
+}
+
+.mod-ul {
+    padding: 10px 18px;
+}
+
+.mod-li {
+    list-style: "- ";
+    color: white;
+    margin-top: 4px;
+}
+
+
+@media (max-width: 767px) {
+    .mod-desc-chap {
+        font-size: 22px;
+    }
+
+    .mod-name {
+        font-size: 26px;
+    }
+
+    .mod-desc-p {
+        font-size: 15px;
+    }
+
+    .mod-li {
+        font-size: 15px;
+    }
+
+    .curseforge-btn,
+    .mcreator-btn,
+    .github-btn,
+    .modrinth-btn,
+    .planet-mc-btn {
+        font-size: 13px;
+    }
+}

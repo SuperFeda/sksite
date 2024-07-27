@@ -1,0 +1,115 @@
+@import "mixins";
+
+#service-main {
+    @include elementCenterMargin;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.service-info {
+    @include elementCenterFlexWrap;
+    @include indent();
+    gap: 25px;
+}
+
+.service-img-sp {
+    filter: var(--default-shadow);
+}
+
+.service-name-sp {
+    font-size: 32px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.service-desc-sp {
+    color: #757575;
+    font-size: 17px;
+    max-width: 600px;
+}
+
+.service-price-sp {
+    @include price;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.prices-sp {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-price-sp {
+    @include price;
+}
+
+.old-price-sp {
+    @include price(#c62323, 18px, line-through);
+}
+
+.work-example-title {
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    margin-top: 35px;
+    font-size: 35px;
+    font-family: "Unbounded", sans-serif;
+    color: white;
+}
+
+.work-example-img {
+    filter: var(--default-shadow);
+    width: 49%;
+    height: auto;
+    flex-grow: 1;
+}
+
+.work-example-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 10px;
+    max-width: 1050px;
+}
+
+.examples {
+    @include indent;
+    margin-top: 50px;
+}
+
+.buy-icon {
+    color: currentColor;
+    position: relative;
+    top: 6px;
+    right: 4px;
+}
+
+
+@media (max-width: 767px) {
+    .service-desc {
+        font-size: 13px;
+    }
+
+    .service-name {
+        font-size: 25px;
+    }
+
+    .service-price {
+        font-size: 18px;
+    }
+
+    .service-img {
+        height: min(390px, 75vw);
+    }
+
+    .work-example-title {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 8px 13px;
+        font-weight: 200;
+    }
+}
