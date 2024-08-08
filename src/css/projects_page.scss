@@ -64,8 +64,6 @@
     @include indent;
     margin-top: 20px;
     margin-bottom: 50px;
-    //display: grid;
-    //grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

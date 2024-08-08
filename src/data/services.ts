@@ -14,7 +14,7 @@ export const services = {
         "price": "service.rew_skin.price",
         "nprice": false,
         "img": "/img/png/services/rew_skin_icon.png",
-        "url": "/service/rew-skin",
+        "url": "/services/rew-skin",
         "pay_url": "https://www.donationalerts.com/r/skylightservices"
     },
     "logo": {

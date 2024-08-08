@@ -205,6 +205,7 @@ footer {
 }
 :root {
   --default-shadow: drop-shadow(0 0 10px black);
+  --default-border-radius: 20px;
   --skylight-blue: #3636e1;
   --skylight-blue-dark: #0f0f9c;
   --skylight-blue-rgb: 54, 54, 225;
@@ -222,6 +223,10 @@ footer {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*:not(header, footer, h1, h2, h3, h4, h5, svg, #box, .container, .service-icon, .warn-img) {
+  border-radius: var(--default-border-radius);
 }
 
 html, body {
@@ -426,10 +431,6 @@ svg * {
   overflow: hidden !important;
 }
 
-img {
-  border-radius: 15px;
-}
-
 .mini-img {
   background-color: transparent;
   margin-right: 15px;
@@ -456,14 +457,16 @@ img {
 
 .code {
   color: white;
+  font-family: "JetBrainsMono";
+  font-size: 14px;
   background-color: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 7px;
+  border-radius: 7px !important;
   padding: 0 7px;
 }
 
 details {
-  border-radius: 10px;
+  border-radius: 10px !important;
   border: 2px solid var(--skylight-blue);
   overflow: hidden;
   cursor: pointer;
@@ -474,6 +477,7 @@ details summary {
   color: white;
   margin: -0.4rem -0.4rem 0;
   padding: 0.4rem 0.7rem;
+  border-radius: 0 !important;
 }
 details summary:hover {
   background-color: rgba(var(--skylight-blue-rgb), 0.8);
@@ -488,7 +492,7 @@ details[open] summary {
 
 .select-menu {
   padding: 6px 16px;
-  border-radius: 10px;
+  border-radius: 10px !important;
   background-color: var(--skylight-blue);
   color: white;
   outline: none;
@@ -534,7 +538,7 @@ details[open] summary {
   padding: 10px 15px;
   color: white;
   background: var(--skylight-blue);
-  border-radius: 10px;
+  border-radius: 10px !important;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -553,7 +557,7 @@ details[open] summary {
   color: white;
   background: transparent;
   border: 2px solid var(--skylight-blue);
-  border-radius: 10px;
+  border-radius: 10px !important;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -614,6 +618,12 @@ details[open] summary {
   .url {
     font-size: 13px;
   }
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

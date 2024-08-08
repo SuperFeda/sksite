@@ -10,8 +10,8 @@
     @include indent;
     margin-top: 20px;
     padding: 10px 15px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
-    border: 1px solid rgba(83, 83, 83, 1);
+    background: linear-gradient(139deg, #ffffff14, #ffffff08 30%, #ffffff03 66%, #ffffff0f);
+    border: 1px solid rgba(83, 83, 83, 0.3);
     border-radius: 20px;
     color: white;
 }
@@ -32,8 +32,8 @@
 
 .services-list {
     @include elementCenterFlexWrap;
-    gap: 15px;
-    padding-top: 20px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .service {

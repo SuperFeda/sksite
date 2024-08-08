@@ -58,7 +58,7 @@ export default function App() {
 
             <Route path="/services/model" element={<Model/>}/>
             <Route path="/services/standart-skin" element={<StandartSkin/>}/>
-            <Route path="/service/rew-skin" element={<SkinRew/>}/>
+            <Route path="/services/rew-skin" element={<SkinRew/>}/>
             <Route path="/services/logo" element={<MCLogo/>}/>
             <Route path="/services/characters-design" element={<CharactersDesign/>}/>
             <Route path="/services/cape" element={<Cape/>}/>

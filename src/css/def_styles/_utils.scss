@@ -15,8 +15,6 @@
     overflow: hidden !important;
 }
 
-img { border-radius: 15px }
-
 .mini-img {
     background-color: transparent;
     margin-right: 15px;
@@ -44,14 +42,16 @@ img { border-radius: 15px }
 
 .code {
     color: white;
+    font-family: "JetBrainsMono";
+    font-size: 14px;
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.75);
-    border-radius: 7px;
+    border-radius: 7px !important;
     padding: 0 7px;
 }
 
 details {
-    border-radius: 10px;
+    border-radius: 10px !important;
     border: 2px solid var(--skylight-blue);
     overflow: hidden;
     cursor: pointer;
@@ -62,6 +62,7 @@ details {
         color: white;
         margin: -.4rem -.4rem 0;
         padding: .4rem .7rem;
+        border-radius: 0 !important;
 
         &:hover {
             background-color: rgba(var(--skylight-blue-rgb), 0.8);
@@ -78,7 +79,7 @@ details[open] {
 
 .select-menu {
     padding: 6px 16px;
-    border-radius: 10px;
+    border-radius: 10px !important;
     background-color: var(--skylight-blue);
     color: white;
     outline: none;
@@ -127,7 +128,7 @@ details[open] {
     padding: 10px 15px;
     color: white;
     background: var(--skylight-blue);
-    border-radius: 10px;
+    border-radius: 10px !important;
     transition: all 0.5s;
     cursor: pointer;
 
@@ -143,7 +144,7 @@ details[open] {
     color: white;
     background: transparent;
     border: 2px solid var(--skylight-blue);
-    border-radius: 10px;
+    border-radius: 10px !important;
     transition: all 0.5s;
     cursor: pointer;
 

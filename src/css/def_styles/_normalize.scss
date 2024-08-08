@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+*:not(header, footer, h1, h2, h3, h4, h5, svg, #box, .container, .service-icon, .warn-img) {
+    border-radius: var(--default-border-radius);
+}
+
 html, body {
     font-family: "Nunito";
     height: 100%;
